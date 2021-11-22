@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+header img {
+    height: 100px;
+    width: 500px;
+    padding-left: 50px;
+    filter: drop-shadow(2px 2px 5px white);
+}
+header img:hover {
+    filter: drop-shadow(6px 6px 7px green);
+    transition: 2s;
+}
+header .logo {
+    min-width: 60px;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    font-family: 'Faster One', cursive;
+    font-size: 60px;
+    word-spacing: -.2em;
+    letter-spacing: 2.5px;
+    text-shadow: #297c08 1px 2.5px;
+}
+header .nav {
+    display: flex;
+    position: relative;
+    font-size: 16px;
+}
+header .nav li a {
+    display: inline-block;
+    color: #fff;
+    margin-left: 40px;
+    font-weight: 450;
+}
+header .nav li a:hover{
+    font-weight: 500;
+    border: 4px solid #161616;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: .1s ease-in-out;
+}
+section {
+    background-color: brown;
+}
+.mainImg {
+    background-color: cadetblue;
+    text-align: center;
+}
+.mainImg img {
+    display: flex;
+    padding: 25px;
+    width: 650px;
+    background-color: darkblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* custom styling for all icons */
+i.fas,
+i.fab {
+  font-size: 25px;
+}
+i.fa-aws {
+    font-size: 12px;
+}
+.fa-soundcloud {
+    color: white;
+
+}
+.fa-mixcloud {
+    color: white;
+    
+}
+.fa-twitch {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+i.fa-play {
+    font-size: 14px;
+}
+i.fa-pause {
+    font-size: 14px;
+}
+
+#img1::after,
+#img2::after,
+#img3::after{
+    content: 'soundcloud';
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    padding: 1em 3em;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-in-out .6s;
+}
+
+#img2::after {
+    content: 'mixcloud';
+}
+
+#img3::after {
+    content: 'twitch';
+}
+
+#img1:hover::after,
+#img2:hover::after,
+#img3:hover::after{
+    transform: scale(1);
+}
+
+.brand-rights {
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
+  }
+
+/* Optional glow effect */
+
+.glow::before,
+.glow::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(-45deg, #00ff66,
+    #00ffff, #ff0fff, #ff0099, #09ffff);
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 80s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {}
+}
+
+/* Media Queries*/
+
+@media (max-width:2560px) {
+    
+}
+
+@media (max-width:1440px) {
+    
+}
+
+@media (max-width:1100px){
+    header {
+        padding: 40px;
+    }
+    header img {
+        height: 135px;
+        width: 550px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+@media (max-width:768px){
+    header {
+        padding: 40px;
+    }
+    header img {
+        height: 80px;
+        width: 400px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+@media (max-width:425px){
+    header {
+        padding: 40px;
+    }
+    header img {
+        height: 45px;
+        width: 250px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+@media (max-width:375px){
+    header {
+        padding: 40px;
+    }
+    header img {
+        height: 45px;
+        width: 250px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+    
+}
