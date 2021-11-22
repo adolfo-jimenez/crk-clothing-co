@@ -72,6 +72,14 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+.mainImg p {
+    display: flex;
+    width: 50%;
+    background-color: #297c08;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* custom styling for all icons */
 i.fas,
