@@ -3,44 +3,53 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     text-decoration: none;
     list-style: none;
   }
+body {
+    background-color: #beb183;
+    margin: 0;
+    padding: 0;
+}
 header {
     width: 100%;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #61292e;
+    padding: 20px;
+    z-index: 5;
+    position: fixed;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: white 1.5px;
+    border-style: groove;
 }
-header h1 {
-    filter: drop-shadow(0px 0px 1px white);
-}
-header img {
-    height: 100px;
-    width: 500px;
-    padding-left: 50px;
-    filter: drop-shadow(2px 2px 5px white);
-}
-header img:hover {
-    filter: drop-shadow(6px 6px 7px green);
-    transition: 2s;
+a:link, a:visited {
+    color:white;
+    text-decoration: none;
 }
 header .logo {
-    min-width: 60px;
-    height: 60px;
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    margin-left: 100px;
+}
+header .cart {
+    position: absolute;
+    right: 0;
+    z-index: 5;
+    margin-right: 100px;
+    color: white;
+}
+header .logo h1 {
     color: #fff;
-    position: relative;
-    font-family: 'Faster One', cursive;
-    font-size: 60px;
-    word-spacing: -.2em;
-    letter-spacing: 2.5px;
-    text-shadow: #297c08 1px 2.5px;
+    word-spacing: .2em;
+    letter-spacing: 5.5px;
+    text-shadow: black 1px 2.5px;
+    font-size: 16px;
 }
 header .nav {
     display: flex;
@@ -53,36 +62,82 @@ header .nav li a {
     margin-left: 40px;
     font-weight: 450;
 }
-header .nav li a:hover{
-    font-weight: 500;
-    border: 4px solid #161616;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    transition: .1s ease-in-out;
+header .nav li a:hover {
+
 }
-section {
-    background-color: black;
+#startOfHomePage {
+    padding-top: 61px;
 }
-.mainImg {
-    /*background-color: cadetblue;*/
-    background-color: rgba(255, 255, 255, 0.1);
+#mainSections {
+    background-color: #beb183;
+    padding: 30px;
+    border-top: olive;
+}
+.callToAction {
+    display:grid;
+    /*(background-color: tomato;*/
+}
+.callToActionText {
     text-align: center;
-    padding: 25px;
-    margin: 25px;
-    filter: drop-shadow(0px 0px 1px white);
-    background-color: rgba(255, 255, 255, 0.5)
+    justify-content: center;
+    align-items: center;
+    /*background-color:cornflowerblue;*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px ;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 20%;
+    border-radius: 10px;
 }
-.mainImg img {
-    display: flex;
-    padding: 25px;
-    width: 650px;
-    opacity: 1;
-    /*background-color: darkblue;*/
+.callToActionText h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+.callToActionText h4 {
+    font-size: 20px;
+    margin: 10px;
+}
+.callToActionText button {
+    font-size: 15px;
+    color: white;
+    font-weight: 900;
+    padding: 5px;
+    background-color: #29485d;
+    border-radius: 5px;
+    margin: 20px;
+}
+.callToActionText p {
+    font-size: 15px;
+    padding: 10px;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-.mainImg p {
+.callToActionImg {
+    /*background-color: cadetblue;*/
+}
+.callToActionImg img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.homeMain {
+    background-image: url(/images/crk_sunset.jpg);
+    background-position: center;
+    background-size:auto ;
+    background-size: 150% 270% ;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    padding: 10px;
+}
+.homeMain img {
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+}
+.homeMain p {
     display: flex;
     width: 50%;
     padding: 25px;
@@ -91,6 +146,9 @@ section {
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
+}
+.elfsight-app-704e3c24-6784-4d6d-9efa-334e7d143eed {
+    background-color: #beb183;
 }
 
 /* custom styling for all icons */
@@ -121,50 +179,18 @@ i.fa-aws {
 .fa-twitter {
     color: white;
 }
-i.fa-play {
-    font-size: 14px;
+footer {
+    padding: 10px;
+    background-color:#61292e;
 }
-i.fa-pause {
-    font-size: 14px;
-}
-
-#img1::after,
-#img2::after,
-#img3::after{
-    content: 'soundcloud';
-    color: #fff;
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    padding: 1em 3em;
-    white-space: nowrap;
-    transform: scale(0);
-    transition: transform ease-in-out .6s;
-}
-
-#img2::after {
-    content: 'mixcloud';
-}
-
-#img3::after {
-    content: 'twitch';
-}
-
-#img1:hover::after,
-#img2:hover::after,
-#img3:hover::after{
-    transform: scale(1);
-}
-
 .brand-rights {
     text-align: center;
     color: white;
-    background-color:black;
 }
 .brand-rights a:link, .brand-rights a:visited {
     color:white;
     text-decoration: none;
-  }
+}
 
 /* Optional glow effect */
 
@@ -195,227 +221,125 @@ i.fa-pause {
 
 /* Media Queries*/
 
-@media (max-width:2560px) {
-    
-}
-
-@media (max-width:1440px) {
-    
-}
-
-@media (max-width:1100px){
+@media (max-width: 375px) {
+    body {
+        background-color: #beb183;
+    }
     header {
-        padding: 40px;
-    }
-    header img {
-        height: 135px;
-        width: 550px;
-        padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
-    }
-    header .nav {
         display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
-    header .nav.active{
-        width: 60%;
-        height: 100%;
-        display: flex;
+    .homeMain {
+        background-image: url(/images/crk_sunset.jpg);
+        background-position: center;
+        background-size: 180% 180% ;
+        background-repeat: no-repeat;
+        min-height: 50vh;
+        padding: 10px;
+    }
+    section {
+        width: 100%;
+    }
+    #startOfHomePage {
+        padding-top: 0px;
+    }
+    #mainSections {
+        background-color: #beb183;
+        padding: 0px;
+    }
+    .callToAction {
+        display:grid;
+        /*(background-color: tomato;*/
+    }
+    .callToActionText {
+        text-align: center;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
-        z-index: 5;
+        /*background-color:cornflowerblue;*/
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px ;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 80%;
+        border-radius: 10px;
     }
-    header .nav li a {
-        margin: 15px 5px;
-        font-size: 25px;
-        color: white;
+    .callToActionText h1 {
+        font-size: 40px;
+        margin: 10px;
     }
-    .toggle {
-        width: 35px;
-        height: 30px;
-        position: relative;
-        background: url(/images/bars.png) no-repeat center;
-        background-size: cover;
-        filter: invert(1);
-        z-index: 100;
-    }
-    .toggle.active {
-        position: fixed;
-        background: url(/images/window-close_white.png) no-repeat center;
-        background-size: cover;
-        filter: invert(0);
-        right: 40px;
-    }
-}
-
-@media (max-width:768px){
-    header {
-        padding: 40px;
-    }
-    header img {
-        height: 80px;
-        width: 400px;
-        padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
+    .callToActionText h4 {
         font-size: 20px;
+        margin: 10px;
     }
-    header .nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    header .nav.active{
-        width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
-        z-index: 5;
-    }
-    header .nav li a {
-        margin: 15px 5px;
-        font-size: 25px;
+    .callToActionText button {
+        font-size: 15px;
         color: white;
+        font-weight: 900;
+        padding: 5px;
+        background-color: #29485d;
+        border-radius: 5px;
+        margin: 20px;
     }
-    .toggle {
-        width: 35px;
-        height: 30px;
-        position: relative;
-        background: url(/images/bars.png) no-repeat center;
-        background-size: cover;
-        filter: invert(1);
-        z-index: 100;
+    .callToActionText p {
+        font-size: 15px;
+        padding: 10px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .toggle.active {
-        position: fixed;
-        background: url(/images/window-close_white.png) no-repeat center;
-        background-size: cover;
-        filter: invert(0);
-        right: 40px;
+    .callToActionImg {
+        /*background-color: cadetblue;*/
     }
-}
+    .callToActionImg img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-@media (max-width:425px){
-    header {
-        padding: 40px;
-    }
-    header img {
-        height: 45px;
-        width: 250px;
-        padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
-    }
-    header .nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    header .nav.active{
-        width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
-        z-index: 5;
-    }
-    header .nav li a {
-        margin: 15px 5px;
-        font-size: 25px;
-        color: white;
-    }
-    .toggle {
-        width: 35px;
-        height: 30px;
-        position: relative;
-        background: url(/images/bars.png) no-repeat center;
-        background-size: cover;
-        filter: invert(1);
-        z-index: 100;
-    }
-    .toggle.active {
-        position: fixed;
-        background: url(/images/window-close_white.png) no-repeat center;
-        background-size: cover;
-        filter: invert(0);
-        right: 40px;
-    }
-}
-
-@media (max-width:375px){
-    header {
-        padding: 40px;
-    }
-    header img {
-        height: 45px;
-        width: 250px;
-        padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
-    }
-    header .nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    header .nav.active{
-        width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
-        z-index: 5;
-    }
-    header .nav li a {
-        margin: 15px 5px;
-        font-size: 25px;
-        color: white;
-    }
-    .toggle {
-        width: 35px;
-        height: 30px;
-        position: relative;
-        background: url(/images/bars.png) no-repeat center;
-        background-size: cover;
-        filter: invert(1);
-        z-index: 100;
-    }
-    .toggle.active {
-        position: fixed;
-        background: url(/images/window-close_white.png) no-repeat center;
-        background-size: cover;
-        filter: invert(0);
-        right: 40px;
+    .elfsight-app-704e3c24-6784-4d6d-9efa-334e7d143eed {
+        background-color: #beb183;
     }
     
+    /* custom styling for all icons */
+    i.fas,
+    i.fab {
+      font-size: 25px;
+    }
+    i.fa-aws {
+        font-size: 10px;
+    }
+    .fa-soundcloud {
+        color: white;
+    
+    }
+    .fa-mixcloud {
+        color: white;
+        
+    }
+    .fa-twitch {
+        color: white;
+    }
+    .fa-facebook {
+        color: white;
+    }
+    .fa-instagram {
+        color: white;
+    }
+    .fa-twitter {
+        color: white;
+    }
+    footer {
+        padding: 0px;
+        background-color:#61292e;
+    }
+    .brand-rights {
+        font-size: 12px;
+        text-align: center;
+        color: white;
+    }
+    .brand-rights a:link, .brand-rights a:visited {
+        color:white;
+        text-decoration: none;
+    }
 }
