@@ -166,7 +166,7 @@ i.fab {
 }*/
 i.fa-aws {
     font-size: 20px;
-    color: black;
+    color: white;
 }
 .fa-soundcloud {
     color: white;
@@ -422,6 +422,7 @@ footer {
     i.fas,
     i.fab {
       font-size: 25px;
+      color: white;
     }
     i.fa-aws {
         font-size: 10px;
