@@ -8,25 +8,18 @@
     list-style: none;
   }
 body {
-    /*background-color: #FC9C54;*/
+    background-image: url(/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+    background-size:cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
-/*header {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 10px;
-}*/
 header {
     width: 100%;
     justify-content: center;
     align-items: center;
-    /*background-color: #acacaa;*/
+    background-color: rgba(0,0,0,.7);
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -38,7 +31,6 @@ header .nav {
     font-size: 20px;
     padding: 20px;
     justify-content: center;
-    background-color: #152852;
 }
 #brandUlLink {
     position: absolute;
@@ -72,19 +64,6 @@ header .logo img{
     margin-left: auto;
     margin-right: auto;
 }
-/*header .logo {
-    position: absolute;
-    left: 0;
-    z-index: 5;
-    margin-left: 100px;
-}*/
-/*header .cart {
-    position: absolute;
-    right: 0;
-    z-index: 5;
-    margin-right: 100px;
-    color: white;
-}*/
 header .cart {
     color: white;
     position: absolute;
@@ -108,30 +87,26 @@ header .nav li a {
 }
 header .nav li a:hover{
     font-weight: 500;
-    border: 4px solid #161616;
-    border-top: none;
-    border-right: none;
-    border-left: none;
     transition: .1s ease-in-out;
 }
-#startOfHomePage {
-    padding-top: 61px;
-}
 #mainSections {
-    background-color: #4B3D60;
+    display: flex;
     padding: 30px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-bottom: white 1.5px;
     border-style: double;
+    min-height: 86vh;
 }
 #instagramSection {
     background-color: #FD5E53;
 }
 .callToAction {
-    display:grid;
-    /*(background-color: tomato;*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .callToActionText {
     text-align: center;
@@ -143,16 +118,16 @@ header .nav li a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: 20px ;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 20%;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
     border-radius: 10px;
 }
 .callToActionText h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 10px;
 }
 .callToActionText h4 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
 }
 .callToActionText button {
@@ -168,41 +143,6 @@ header .nav li a:hover{
     font-size: 15px;
     padding: 10px;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.homeMain {
-    background-image: url(/images/crk_sunset.jpg);
-    background-position: center;
-    background-size:auto ;
-    background-size: 150% 270% ;
-    background-repeat: no-repeat;
-    min-height: 80vh;
-    padding: 10px;
-}
-.homeMain img {
-    width: 500px;
-    height: 500px;
-    padding: 25px;
-}
-.homeMain p {
-    display: flex;
-    width: 50%;
-    padding: 25px;
-    /*background-color: #297c08;*/
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 900;
-}
-.elfsight-app-704e3c24-6784-4d6d-9efa-334e7d143eed {
-    background-color: #beb183;
-}
-.mainImg p {
-    display: flex;
-    width: 50%;
-    background-color: #297c08;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -243,7 +183,7 @@ i.fa-aws {
 }
 footer {
     padding: 10px;
-    background-color: #FC9C54;
+    background-color: rgba(0,0,0,.7);
     font-size: 20px;
     border-top: 0px;
     border-left: 0px;
@@ -253,10 +193,10 @@ footer {
 }
 .brand-rights {
     text-align: center;
-    color: black;
+    color: white;
 }
 .brand-rights a:link, .brand-rights a:visited {
-    color:black;
+    color:white;
     text-decoration: none;
 }
 
@@ -291,7 +231,9 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        background-color: #beb183;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     header {
         padding: 30px;
@@ -404,24 +346,12 @@ footer {
     .menu-btn.open .menu-btn__burger::after {
         transform: rotate(-45deg) translate(35px, 35px);
     }
-
-    .homeMain {
-        background-image: url(/images/crk_sunset.jpg);
-        background-position: center;
-        background-size: 180% 180% ;
-        background-repeat: no-repeat;
-        min-height: 50vh;
-        padding: 10px;
-    }
     section {
         width: 100%;
     }
-    #startOfHomePage {
-        padding-top: 0px;
-    }
     #mainSections {
-        background-color: #beb183;
         padding: 0px;
+        min-height: 120vh;
     }
     .callToAction {
         display:grid;
@@ -437,7 +367,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         padding: 20px ;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.9);
         width: 80%;
         border-radius: 10px;
     }
@@ -473,10 +403,6 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
-    .elfsight-app-704e3c24-6784-4d6d-9efa-334e7d143eed {
-        background-color: #beb183;
-    }
     
     /* custom styling for all icons */
     i.fas,
@@ -507,8 +433,7 @@ footer {
         color: white;
     }
     footer {
-        padding: 0px;
-        background-color:#61292e;
+        padding: 10px;
     }
     .brand-rights {
         font-size: 12px;
