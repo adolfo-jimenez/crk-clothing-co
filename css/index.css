@@ -249,6 +249,18 @@ footer {
         background: none;
         width: 100%;
     }
+    .mobileOnlyLogo {
+        display: unset;
+        align-items: center;
+        position: absolute;
+        padding: 5px;
+    }
+    .mobileOnlyLogo img{
+        width: 60px;
+        padding: 10px;
+        filter: drop-shadow(1px 1px 2px black);
+        border-radius: 15px;
+    }
     header .nav{
         display: none;
         position: absolute;
@@ -458,5 +470,19 @@ footer {
     .brand-rights a:link, .brand-rights a:visited {
         color:white;
         text-decoration: none;
+    }
+}
+@media (max-width: 360px) {
+    .mobileOnlyLogo {
+        display: unset;
+        align-items: center;
+        position: absolute;
+        padding: 5px;
+    }
+    .mobileOnlyLogo img{
+        width: 60px;
+        padding: 10px;
+        filter: drop-shadow(1px 1px 2px black);
+        border-radius: 15px;
     }
 }
