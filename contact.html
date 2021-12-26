@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <title>CRK | About</title>
-    <link rel="stylesheet" href="css/about.css">
+    <title>CRK | Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -36,16 +36,24 @@
 
     
     <section id="mainSections">
-
-        <div class="mainBio">
-            <div class="aboutImg">
-                <img src="/images/crk_sunset.jpg" alt="Sunset Pic">
-            </div>
-            <div class="aboutText">
-                <h1>About Cali's Royal Kings</h1>
-                <p>This is where you can add information about what Cali’s Royal King is and the merchandise that you sell regarding your clothing brand. You can do a brief origins story on how all this first got prompted and then you can elaborate on the clothes you sell now and plan on selling in the future perhaps. This doesn’t have to be too lengthy, maybe a paragraph would be okay. We can also add my photos onto this page for historical context. Perhaps this would be the best spot for the instagram integration.</p>
+        <div class="mainContact">
+            <div class="contact-box">
+                <form target="_blank" action="https://formsubmit.co/dlfbonds@gmail.com" method=”POST”>
+                    <div class="contactText">
+                        <h1>Contact</h1>
+                        <p>This is where a website visitor would submit an email to you. This is just in case they have any questions about your merchandise or they have a question about an existing order or if they simply want to know when an item is back in stock.</p>
+                    </div>
+                    <input type="text" class="input-field" placeholder="Your Name" required>
+                    <input type="email" class="input-field" placeholder="Your Email" required>
+                    <input type="hidden" name="_next" value="/thankyou.html">
+                    <input type="text" class="input-field" placeholder="Your Subject" required>
+                    <textarea type="text" class="input-field textarea-field" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
         </div>
+        
+
     </section>
      
 

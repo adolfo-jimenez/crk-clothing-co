@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+body {
+    background-image: url(/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+    background-size:cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.mobileOnlyLogo {
+    display: none;
+}
+header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.7);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: white 1.5px;
+    border-style: double;
+}
+header .nav {
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+#brandUlLink {
+    position: absolute;
+    left: 0;
+    margin-right: 100px;
+}
+#brandUlLink a h1 {
+    font-size: 20px;
+}
+#shopCartLink {
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+}
+a:link, a:visited {
+    color:white;
+    text-decoration: none;
+}
+header .logo {
+    text-align: center;
+    background-color: #08183A;
+    padding: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: white 1.5px;
+    border-style: double;
+}
+header .logo img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .cart {
+    color: white;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+    margin-right: 100px;
+    margin-top: -160px;
+}
+header .logo h1 {
+    color: #fff;
+    word-spacing: .2em;
+    letter-spacing: 5.5px;
+    text-shadow: black 1px 2.5px;
+    font-size: 36px;
+}
+header .nav li a {
+    display: inline-block;
+    color: #fff;
+    margin-left: 40px;
+    font-weight: 450;
+}
+header .nav li a:hover{
+    font-weight: 500;
+    transition: .1s ease-in-out;
+}
+#mainSections {
+    display: flex;
+    padding: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: white 1.5px;
+    border-style: double;
+    min-height: 91vh;
+    color: white;
+}
+.mainContact {
+    margin-left: auto;
+    margin-right: auto;
+}
+.contactText {
+    display: unset;
+    color: white;
+}
+.contactText h1 {
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: underline;
+    text-align: center;
+}
+.contactText p {
+    font-size: 25px;
+    margin: 10px;
+}
+.contact-box {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+form {
+    margin: 0px;
+    padding: 20px;
+    background-color: black;
+}
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+}
+.btn {
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #08183A;
+}
+/* custom styling for all icons */
+i.fas,
+i.fab {
+  font-size: 25px;
+}
+/*i.fa-shopping-cart {
+    font-size: 60px;
+    color: white;
+    text-shadow: black 7px 5.5px;
+}*/
+i.fa-aws {
+    font-size: 20px;
+    color: white;
+}
+.fa-soundcloud {
+    color: white;
+
+}
+.fa-mixcloud {
+    color: white;
+    
+}
+.fa-twitch {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+footer {
+    padding: 10px;
+    background-color: rgba(0,0,0,.7);
+    font-size: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: white 1.5px;
+    border-style: double;
+}
+.brand-rights {
+    text-align: center;
+    color: white;
+}
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+/* Optional glow effect */
+
+.glow::before,
+.glow::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(-45deg, #00ff66,
+    #00ffff, #ff0fff, #ff0099, #09ffff);
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 80s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {}
+}
+
+/* Media Queries*/
+
+@media (max-width: 1024px) {
+    body {
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header {
+        padding: 0px;
+        justify-content: unset;
+        border-style: none;
+        background: none;
+        width: 100%;
+    }
+    .mobileOnlyLogo {
+        display: unset;
+        align-items: center;
+        position: absolute;
+        padding: 5px;
+    }
+    .mobileOnlyLogo img{
+        width: 60px;
+        padding: 10px;
+        filter: drop-shadow(1px 1px 2px black);
+        border-radius: 15px;
+    }
+    header .nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #brandUlLink {
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #shopCartLink {
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header .nav.active{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .99);
+        opacity: 1;
+        z-index: 6;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+        right: 40px;
+        margin-top: 30px;
+    }
+    .toggle.active {
+        position: absolute;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        border: 3px solid #fff;
+        z-index: 7;
+        background-color: blueviolet;
+    }
+    .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all .5s ease-in-out;
+    }
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all .5s ease-in-out;
+        z-index: 6;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-16px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(16px);
+    }
+
+    /* Animation */
+
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+    section {
+        width: 100%;
+    }
+    #mainSections {
+        display: flex;
+        padding: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: white 1.5px;
+        border-style: double;
+        min-height: 100vh;
+        color: white;
+    }
+    .mainContact {
+    }
+    .contactText {
+    }
+    .contactText h1 {
+        font-size: 35px;
+        margin: 0px;
+        padding: 10px;
+    }
+    .contactText p {
+        font-size: 15px;
+    }
+    /* custom styling for all icons */
+    i.fas,
+    i.fab {
+      font-size: 25px;
+      color: white;
+    }
+    i.fa-aws {
+        font-size: 10px;
+    }
+    .fa-soundcloud {
+        color: white;
+    
+    }
+    .fa-mixcloud {
+        color: white;
+        
+    }
+    .fa-twitch {
+        color: white;
+    }
+    .fa-facebook {
+        color: white;
+    }
+    .fa-instagram {
+        color: white;
+    }
+    .fa-twitter {
+        color: white;
+    }
+    footer {
+        padding: 10px;
+    }
+    .brand-rights {
+        font-size: 12px;
+        text-align: center;
+        color: white;
+    }
+    .brand-rights a:link, .brand-rights a:visited {
+        color:white;
+        text-decoration: none;
+    }
+}
+@media (max-width: 360px) {
+    .mobileOnlyLogo {
+        display: unset;
+        align-items: center;
+        position: absolute;
+        padding: 5px;
+        z-index: 100;
+    }
+    .mobileOnlyLogo img{
+        width: 60px;
+        padding: 10px;
+        filter: drop-shadow(1px 1px 2px black);
+        border-radius: 15px;
+    }
+    .mainContact {
+    }
+    .contactText {
+    }
+    .contactText h1 {
+        font-size: 35px;
+        margin: 0px;
+        padding: 10px;
+    }
+    .contactText p {
+        font-size: 15px;
+    }
+}
