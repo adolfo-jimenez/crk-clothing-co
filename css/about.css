@@ -94,51 +94,50 @@ header .nav li a:hover{
 }
 #mainSections {
     display: flex;
-    padding: 30px;
+    padding: 0px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-bottom: white 1.5px;
     border-style: double;
-    min-height: 86vh;
+    min-height: 91vh;
     color: white;
 }
-.mainShop {
+.mainBio {
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
 }
-.mainShopText {
+.mainBio img {
+    width: 900px;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.aboutText {
     text-align: center;
     justify-content: center;
     align-items: center;
     /*background-color:cornflowerblue;*/
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 20px ;
-    
-    width: 100%;
+    width: 40%;
     border-radius: 10px;
 }
-.mainShopText h1 {
+.aboutText h1 {
     font-size: 50px;
     margin: 10px;
+    padding: 40px;
+    text-decoration: underline;
 }
-.mainShopText h4 {
-    font-size: 30px;
-    margin: 10px;
-}
-.mainShopText p {
+.aboutText p {
     font-size: 25px;
-    padding: 10px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
 }
 /* custom styling for all icons */
 i.fas,
@@ -365,7 +364,7 @@ footer {
         min-height: 100vh;
         color: white;
     }
-    .mainShop {
+    .mainBio {
         display: unset;
         margin-top: auto;
         margin-bottom: 20px;
@@ -373,38 +372,36 @@ footer {
         margin-right: auto;
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
+        padding: 0px;
     }
-    .mainShopText {
+    .aboutImg {
+        margin-top: 140px;
+    }
+    .aboutImg img {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutText {
         text-align: center;
         justify-content: center;
         align-items: center;
-        /*background-color:cornflowerblue;*/
-        margin-top: 100px;
+        margin-top: 30px;
         margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
         padding: 0px ;
-        
-        width: 100%;
+        width: 90%;
         border-radius: 10px;
     }
-    .mainShopText h1 {
-        font-size: 50px;
-        margin: 10px;
-    }
-    .mainShopText h4 {
-        font-size: 30px;
-        margin: 10px;
-    }
-    .mainShopText p {
-        font-size: 15px;
+    .aboutText h1 {
+        font-size: 35px;
+        margin: 0px;
         padding: 10px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
-    #my-store-69694383 {
-        padding-top: 10px;
+    .aboutText p {
+        font-size: 15px;
     }
     /* custom styling for all icons */
     i.fas,
@@ -454,6 +451,7 @@ footer {
         align-items: center;
         position: absolute;
         padding: 5px;
+        z-index: 100;
     }
     .mobileOnlyLogo img{
         width: 60px;
@@ -461,7 +459,7 @@ footer {
         filter: drop-shadow(1px 1px 2px black);
         border-radius: 15px;
     }
-    .mainShop {
+    .mainBio {
         display: unset;
         margin-top: auto;
         margin-bottom: 20px;
@@ -469,37 +467,35 @@ footer {
         margin-right: auto;
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
+        padding: 0px;
     }
-    .mainShopText {
+    .aboutImg {
+        margin-top: 140px;
+    }
+    .aboutImg img {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutText {
         text-align: center;
         justify-content: center;
         align-items: center;
-        /*background-color:cornflowerblue;*/
-        margin-top: 100px;
+        margin-top: 30px;
         margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
         padding: 0px ;
-        
-        width: 100%;
+        width: 90%;
         border-radius: 10px;
     }
-    .mainShopText h1 {
-        font-size: 50px;
-        margin: 10px;
+    .aboutText h1 {
+        font-size: 35px;
+        margin: 0px;
+        padding: 10px;
     }
-    .mainShopText h4 {
-        font-size: 30px;
-        margin: 10px;
-    }
-    .mainShopText p {
+    .aboutText p {
         font-size: 15px;
-        padding: 10px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #my-store-69694383 {
-        padding: 10px;
     }
 }
