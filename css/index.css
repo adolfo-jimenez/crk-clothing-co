@@ -15,6 +15,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.mobileOnlyLogo {
+    display: none;
+}
 header {
     width: 100%;
     justify-content: center;
@@ -98,15 +101,15 @@ header .nav li a:hover{
     border-bottom: white 1.5px;
     border-style: double;
     min-height: 86vh;
-}
-#instagramSection {
-    background-color: #FD5E53;
+    color: white;
 }
 .callToAction {
+    display: flex;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .callToActionText {
     text-align: center;
@@ -118,7 +121,7 @@ header .nav li a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: 20px ;
-    background-color: rgba(255, 255, 255, 0.9);
+    
     width: 100%;
     border-radius: 10px;
 }
@@ -146,7 +149,11 @@ header .nav li a:hover{
     margin-left: auto;
     margin-right: auto;
 }
-
+.callToActionTextInfo {
+    margin-top: auto;
+    margin-bottom:  auto;
+    width: 100%;
+}
 /* custom styling for all icons */
 i.fas,
 i.fab {
@@ -229,17 +236,18 @@ footer {
 
 /* Media Queries*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     body {
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
     }
     header {
-        padding: 30px;
+        padding: 0px;
         justify-content: unset;
         border-style: none;
         background: none;
+        width: 100%;
     }
     header .nav{
         display: none;
@@ -247,28 +255,26 @@ footer {
         top: 0;
         right: 0;
     }
-    header .logo, header .cart {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
     #brandUlLink {
-        display: unset;
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
     }
     #shopCartLink {
-        display: unset;
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
     }
     header .nav.active{
-        width: 60%;
+        width: 70%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
+        background-color: rgba(0, 0, 0, .99);
+        opacity: 1;
         z-index: 6;
     }
     header .nav li a {
@@ -285,6 +291,7 @@ footer {
         filter: invert(1);
         z-index: 100;
         right: 40px;
+        margin-top: 30px;
     }
     .toggle.active {
         position: fixed;
@@ -350,29 +357,41 @@ footer {
         width: 100%;
     }
     #mainSections {
-        padding: 0px;
-        min-height: 120vh;
+        display: flex;
+        padding: 10px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: white 1.5px;
+        border-style: double;
+        min-height: 100vh;
+        color: white;
     }
     .callToAction {
-        display:grid;
-        /*(background-color: tomato;*/
+        display: inline-block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 90%;
+        padding: 10px;
     }
     .callToActionText {
         text-align: center;
         justify-content: center;
         align-items: center;
-        /*background-color:cornflowerblue;*/
         margin-top: 25px;
         margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px ;
-        background-color: rgba(255, 255, 255, 0.9);
-        width: 80%;
+        padding: 0px ;
+        
+        width: 100%;
         border-radius: 10px;
     }
     .callToActionText h1 {
-        font-size: 40px;
+        font-size: 35px;
         margin: 10px;
     }
     .callToActionText h4 {
@@ -388,22 +407,17 @@ footer {
         border-radius: 5px;
         margin: 20px;
     }
-    .callToActionText p {
-        font-size: 15px;
-        padding: 10px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+    .callToActionTextInfo {
+        text-align: center;
+        margin-top: auto;
+        margin-bottom:  auto;
+        width: 100%;
     }
-    .callToActionImg {
-        /*background-color: cadetblue;*/
+    .callToActionTextInfo p {
+        font-size: 20px;
+        margin-top: auto;
+        margin-bottom:  auto;
     }
-    .callToActionImg img {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     /* custom styling for all icons */
     i.fas,
     i.fab {
