@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 #smallText {
     font-size: 13px;
 }
@@ -10,9 +10,8 @@
     list-style: none;
   }
 body {
-    background-image: url(/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+    background-image: url(/images/sincerely-media-p-NQlmGvFC8-unsplash.jpg);
     background-size:cover;
-    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -24,7 +23,8 @@ header {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,.7);
+    /*background-color: rgba(0,0,0,.7);*/
+    background-color: #c02600;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -111,73 +111,40 @@ header .nav li a:hover{
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 70%;
 }
 .mainSlideShow {
     /*background-color: cornflowerblue;*/
     padding: 40px;
-    width: 100%;
+    width: 50%;
 }
 .mainSlideShow img {
     display: flex;
-    width: 70%;
+    width: 75%;
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
 }
-.callToActionText {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    /*background-color:cornflowerblue;*/
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px ;
-    width: 100%;
-    border-radius: 10px;
-}
-.callToActionText img {
-    width: 100%;
-    padding: 10px;
-}
-.callToActionText h1 {
-    font-size: 50px;
-    margin: 10px;
-}
-.callToActionText h4 {
-    font-size: 30px;
-    margin: 10px;
-}
-.callToActionText button {
-    font-size: 15px;
-    color: white;
-    font-weight: 900;
-    padding: 5px;
-    background-color: #29485d;
-    border-radius: 5px;
-    margin: 20px;
-}
-.callToActionText p {
-    font-size: 15px;
-    padding: 10px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 .callToActionTextInfo {
+    display: unset;
+    justify-content: center;
+    text-align: unset;
     margin-top: auto;
     margin-bottom:  auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .callToActionTextInfo p {
     font-size: 25px;
     width: 90%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .callToActionTextInfo h1 {
     font-size: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .callToActionTextInfo h4 {
     font-size: 20px;
@@ -239,7 +206,8 @@ i.fa-aws {
 }
 footer {
     padding: 10px;
-    background-color: rgba(0,0,0,.7);
+    /*background-color: rgba(0,0,0,.7);*/
+    background-color: #c02600;
     font-size: 20px;
     border-top: 0px;
     border-left: 0px;
@@ -419,7 +387,6 @@ footer {
         margin-bottom: auto;
         margin-left: 0px;
         margin-right: 0px;
-        background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
         padding: 10px;
     }
@@ -438,40 +405,12 @@ footer {
         margin-right: auto;
         border-radius: 5px;
     }
-    .callToActionText {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0px ;
-        
-        width: 100%;
-        border-radius: 10px;
-    }
-    .callToActionText h1 {
-        font-size: 35px;
-        margin: 10px;
-    }
-    .callToActionText h4 {
-        font-size: 20px;
-        margin: 10px;
-    }
-    .callToActionText button {
-        font-size: 15px;
-        color: white;
-        font-weight: 900;
-        padding: 5px;
-        background-color: #29485d;
-        border-radius: 5px;
-    }
     .callToActionTextInfo {
         text-align: center;
         margin-top: auto;
         margin-bottom:  auto;
         width: 100%;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
     }
     .callToActionTextInfo p {
         font-size: 20px;
@@ -682,7 +621,6 @@ footer {
         margin-bottom: auto;
         margin-left: 0px;
         margin-right: 0px;
-        background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
         padding: 10px;
     }
@@ -700,36 +638,6 @@ footer {
         margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
-    }
-    .callToActionText {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0px ;
-        
-        width: 100%;
-        border-radius: 10px;
-    }
-    .callToActionText h1 {
-        font-size: 35px;
-        margin: 10px;
-    }
-    .callToActionText h4 {
-        font-size: 20px;
-        margin: 10px;
-    }
-    .callToActionText button {
-        font-size: 15px;
-        color: white;
-        font-weight: 900;
-        padding: 5px;
-        background-color: #29485d;
-        border-radius: 5px;
-        margin: 20px;
     }
     .callToActionTextInfo {
         text-align: center;

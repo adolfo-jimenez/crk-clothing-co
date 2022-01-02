@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
-
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
     list-style: none;
   }
 body {
-    background-image: url(/images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+    background-image: url(/images/sincerely-media-p-NQlmGvFC8-unsplash.jpg);
     background-size:cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -22,7 +21,8 @@ header {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,.7);
+    /*background-color: rgba(0,0,0,.7);*/
+    background-color: #c02600;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -104,7 +104,7 @@ header .nav li a:hover{
     color: white;
 }
 .mainShop {
-    display: flex;
+    display: unset;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -128,10 +128,12 @@ header .nav li a:hover{
 .mainShopText h1 {
     font-size: 50px;
     margin: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .mainShopText h4 {
     font-size: 30px;
     margin: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .mainShopText p {
     font-size: 25px;
@@ -139,6 +141,7 @@ header .nav li a:hover{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 /* custom styling for all icons */
 i.fas,
@@ -176,7 +179,8 @@ i.fa-aws {
 }
 footer {
     padding: 10px;
-    background-color: rgba(0,0,0,.7);
+    /*background-color: rgba(0,0,0,.7);*/
+    background-color: #c02600;
     font-size: 20px;
     border-top: 0px;
     border-left: 0px;
