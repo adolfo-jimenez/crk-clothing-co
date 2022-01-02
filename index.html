@@ -39,23 +39,41 @@
     
     <section id="mainSections">
 
-        <div class="callToAction">
-            <div class="callToActionText">
-                <h1>Chasing Success</h1>
-                <h4>CRK Clothing</h4>
-                <!--<p>Sea sed invidunt est dolor et duo sit elitr sit sanctus, duo rebum labore voluptua lorem. Dolor gubergren sanctus tempor.</p>-->
-                <a href="/shop.html"><button autofocus="autofocus">Shop Now</button></a>
-                
-                <!--<p><a href="">Shop Now</a></p>-->
-            </div>
-            <div class="callToActionTextInfo">
-                <p>Insert landing page brand introduction promo of your choosing here. Keep it brief and stylish. About two to three sentences should do. </p>
-                <br>
-                <br>
-                <p id="smallText">***We can also add additional pictures onto this main landing page to do a quick preview how your clothes looks like on people. We can use a lot more photos of your merch on the shop page details as well.***</p>
-            </div>
-            
+        
 
+        <div class="callToAction">
+            <div class="mainSlideShow">
+                <div class="mySlides fade">
+                    <img src="/shopImages/shirt1_0.jpg">
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <img src="/shopImages/shirt1_3.jpg">
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <img src="/shopImages/shirt1_6.jpg">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="/shopImages/shirt1_1.jpg">
+                  </div>
+
+                  <!-- Number of dots must match number of photos used-->
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                  </div>
+            </div>
+    
+            <div class="callToActionTextInfo">
+                <h1>Crown Style Clothing</h1>
+                <br>
+                <p>Check out our latest wear at our online shop for more of the freshest and dopest from Cali’s Royal King!</p>
+                <a href="/shop.html"><button autofocus="autofocus">Shop Now</button></a>
+            </div>
         </div>
 
         
@@ -73,6 +91,27 @@
         </div>
     </footer>
     
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
     <script src="./js/playMusic.js"></script>
     <script src="./js/nav.js"></script>
 </body>
