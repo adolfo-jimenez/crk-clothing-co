@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Yanone+Kaffeesatz&family=Shizuru&family=Yanone+Kaffeesatz&family=Yellowtail&display=swap');
 #smallText {
     font-size: 13px;
 }
@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .mobileOnlyLogo {
     display: none;
@@ -24,18 +25,58 @@ header {
     justify-content: center;
     align-items: center;
     /*background-color: rgba(0,0,0,.7);*/
-    background-color: #c02600;
+    /*background-color:rgba(5, 97, 202, 0.9);*/
+    background-color: #c03411;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom: white 1.5px;
+    border-bottom: white 1px;
     border-style: double;
 }
 header .nav {
     display: flex;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 18px;
+    padding: 0px;
+    justify-content: space-around;
+    /*background-color: blue;*/
+    border-top: white 1px;
+    border-style: double;
+    border-bottom: white 0px;
+    border-left: white 0px;
+    border-right: white 0px;
+}
+header .nav li {
+    border-top: white 0px;
+    border-left: white 0px;
+    border-right: white 0px;
+    border-bottom: 0px;
+    border-color: white;
+    border-style: inset;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    /*background-color: #c02600;*/
+}
+header .nav li:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+header .nav a li {
+    font-family: 'Anton', sans-serif;
+    width: 460px;
+}
+.brandNameLogo {
+    display: flex;
     justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+.brandNameLogo h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 100;
 }
 #brandUlLink {
     position: absolute;
@@ -86,9 +127,10 @@ header .logo h1 {
 }
 header .nav li a {
     display: inline-block;
-    color: #fff;
+    color: white;
     margin-left: 40px;
     font-weight: 450;
+    text-shadow: 1px 1px 2px black;
 }
 header .nav li a:hover{
     font-weight: 500;
@@ -141,10 +183,14 @@ header .nav li a:hover{
     font-size: 25px;
     width: 90%;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 100;
 }
 .callToActionTextInfo h1 {
     font-size: 50px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 100;
 }
 .callToActionTextInfo h4 {
     font-size: 20px;
@@ -162,6 +208,7 @@ header .nav li a:hover{
     padding: 5px;
     background-color: #29485d;
     border-radius: 5px;
+    font-family: Georgia, serif;
 }
 .callToActionText p {
     font-size: 15px;
@@ -218,6 +265,13 @@ footer {
 .brand-rights {
     text-align: center;
     color: white;
+}
+small {
+    font-family: 'Yellowtail', cursive;
+    text-shadow: 1px 1px 2px black;
+}
+small a {
+    font-family: 'Yellowtail', cursive;
 }
 .brand-rights a:link, .brand-rights a:visited {
     color:white;
@@ -484,6 +538,9 @@ footer {
         border-style: none;
         background: none;
         width: 100%;
+    }
+    header .nav li:hover {
+        background-color: rgba(0, 0, 0, .0);
     }
     .mobileOnlyLogo {
         display: unset;

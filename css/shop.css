@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Yanone+Kaffeesatz&family=Shizuru&family=Yanone+Kaffeesatz&family=Yellowtail&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -22,18 +22,58 @@ header {
     justify-content: center;
     align-items: center;
     /*background-color: rgba(0,0,0,.7);*/
-    background-color: #c02600;
+    /*background-color:rgba(5, 97, 202, 0.9);*/
+    background-color: #c03411;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom: white 1.5px;
+    border-bottom: white 1px;
     border-style: double;
 }
 header .nav {
     display: flex;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 18px;
+    padding: 0px;
+    justify-content: space-around;
+    /*background-color: blue;*/
+    border-top: white 1px;
+    border-style: double;
+    border-bottom: white 0px;
+    border-left: white 0px;
+    border-right: white 0px;
+}
+header .nav li {
+    border-top: white 0px;
+    border-left: white 0px;
+    border-right: white 0px;
+    border-bottom: 0px;
+    border-color: white;
+    border-style: inset;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    /*background-color: #c02600;*/
+}
+header .nav li:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+header .nav a li {
+    font-family: 'Anton', sans-serif;
+    width: 460px;
+}
+.brandNameLogo {
+    display: flex;
     justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+.brandNameLogo h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 100;
 }
 #brandUlLink {
     position: absolute;
@@ -129,11 +169,15 @@ header .nav li a:hover{
     font-size: 50px;
     margin: 10px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    text-shadow: 2px 2px 3px black;
 }
 .mainShopText h4 {
     font-size: 30px;
     margin: 10px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    text-shadow: 2px 2px 3px black;
 }
 .mainShopText p {
     font-size: 25px;
@@ -188,6 +232,13 @@ footer {
     border-bottom: white 1.5px;
     border-style: double;
 }
+small {
+    font-family: 'Yellowtail', cursive;
+    text-shadow: 1px 1px 2px black;
+}
+small a {
+    font-family: 'Yellowtail', cursive;
+}
 .brand-rights {
     text-align: center;
     color: white;
@@ -238,6 +289,9 @@ footer {
         border-style: none;
         background: none;
         width: 100%;
+    }
+    header .nav li:hover {
+        background-color: rgba(0, 0, 0, .0);
     }
     .mobileOnlyLogo {
         display: unset;
